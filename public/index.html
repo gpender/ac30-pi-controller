@@ -6,7 +6,15 @@
     <body ng-controller='controller as vm'>
         Hello
         <button id="scan-drives" ng-click="vm.scanDrives()">Scan</button>
-        {{vm.guy}}
+        <ul>
+            <li ng-repeat="drive in vm.drives">
+                    {{drive.name}}
+                    {{drive.ipAddress}}
+                    {{drive.fwVersion}}
+                    {{drive.macId}}
+                    {{drive.driveType}}
+            </li>
+        </ul>
         <script src="./bower_components/angular/angular.min.js"></script>
         <script src="./js/lib/jquery-3.3.1.min.js"></script>
         <script src="./js/lib/socket.io.js"></script>
