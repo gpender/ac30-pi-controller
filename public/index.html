@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='ac30-pi'>
 <head>
 
 </head>
-    <body>
+    <body ng-controller='controller as vm'>
         Hello
-        <button id="scan-drives">Scan</button>
-
+        <button id="scan-drives" ng-click="vm.scanDrives()">Scan</button>
+        {{vm.guy}}
+        <script src="./bower_components/angular/angular.min.js"></script>
         <script src="./js/lib/jquery-3.3.1.min.js"></script>
         <script src="./js/lib/socket.io.js"></script>
+
+        <script src="app.js"></script>
+
         <script src="./js/index.js"></script>
     </body>
 </html>
