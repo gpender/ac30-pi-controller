@@ -1,4 +1,4 @@
-var socket = io();
+//var socket = io();
 
 
 //var scanButton = jQuery('#scan-drives');
